@@ -1,10 +1,9 @@
-﻿using CarAuctionPro.Interfaces;
-using CarAuctionPro.Utilities.Helpers;
+﻿using CarAuctionPro.Utilities.Helpers;
 using FluentValidation;
 
 namespace CarAuctionPro.Classes.VehicleTypes
 {
-    public class Suv : Vehicle, IVehicle
+    public class Suv : Vehicle
     {
         private int numberOfSeats;
 
@@ -24,7 +23,7 @@ namespace CarAuctionPro.Classes.VehicleTypes
             NumberOfSeats = numberOfSeats;
         }
 
-        public string GetVehicleTypeDetails()
+        public override string GetVehicleTypeDetails()
         {
             return NumberOfSeats.GetStringPropertyDetails("Number of seats");
         }

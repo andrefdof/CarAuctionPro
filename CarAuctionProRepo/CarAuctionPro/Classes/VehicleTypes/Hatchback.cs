@@ -1,10 +1,9 @@
-﻿using CarAuctionPro.Interfaces;
-using CarAuctionPro.Utilities.Helpers;
+﻿using CarAuctionPro.Utilities.Helpers;
 using FluentValidation;
 
 namespace CarAuctionPro.Classes.VehicleTypes
 {
-    public class Hatchback : Vehicle, IVehicle
+    public class Hatchback : Vehicle
     {
         private int numberOfDoors;
 
@@ -23,7 +22,7 @@ namespace CarAuctionPro.Classes.VehicleTypes
             StartingBid = startingBid;
             NumberOfDoors = numberOfDoors;
         }
-        public string GetVehicleTypeDetails()
+        public override string GetVehicleTypeDetails()
         {
             return NumberOfDoors.GetStringPropertyDetails("Number of doors");
         }

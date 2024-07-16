@@ -1,8 +1,9 @@
 ﻿using CarAuctionPro.Utilities.Helpers;
+using CarAuctionPro.Interfaces;
 
 namespace CarAuctionPro.Classes
 {
-    public abstract class Vehicle
+    public abstract class Vehicle: IVehicle
     {
         public Guid Id { get;  set; }
         private string manufacturer = string.Empty;
@@ -45,5 +46,7 @@ namespace CarAuctionPro.Classes
             get { return startingBid; }
             set { value.Validate(new StartingBidValidator()); startingBid = value; }
         }
+
+        public abstract string GetVehicleTypeDetails();
     }
 }

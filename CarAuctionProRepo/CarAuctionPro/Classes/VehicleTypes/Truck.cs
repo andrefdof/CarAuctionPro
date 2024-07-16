@@ -1,10 +1,9 @@
-﻿using CarAuctionPro.Interfaces;
-using CarAuctionPro.Utilities.Helpers;
+﻿using CarAuctionPro.Utilities.Helpers;
 using FluentValidation;
 
 namespace CarAuctionPro.Classes.VehicleTypes
 {
-    public class Truck : Vehicle, IVehicle
+    public class Truck : Vehicle
     {
         private string loadCapacity = string.Empty;
 
@@ -28,7 +27,7 @@ namespace CarAuctionPro.Classes.VehicleTypes
             StartingBid = startingBid;
             LoadCapacity = loadCapacity;
         }
-        public string GetVehicleTypeDetails()
+        public override string GetVehicleTypeDetails()
         {
             return LoadCapacity.GetStringPropertyDetails("Load Capacity");
         }
