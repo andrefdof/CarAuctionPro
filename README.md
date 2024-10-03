@@ -4,8 +4,6 @@ This was developed as part of an interview requirement for a job application.
 
 It represents backend C# code for a car auction system.
 
-[System Description and Requirements](../CarAuctionPro/CarAuctionProRepo/Media/Problem%20Statement%20Car%20Auction%20Manag.md)
-
 # Assumptions and considerations
 
 - `VehicleId` is a GUID.
