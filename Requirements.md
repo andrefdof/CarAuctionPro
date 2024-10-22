@@ -1,4 +1,4 @@
-Problem Statement: Car Auction Management System
+# Problem Statement: Car Auction Management System
 
 You are tasked with implementing a simple Car Auction Management System. The system should handle different types of vehicles: Sedans, SUVs, and Trucks. 
 Each of these types has different attributes:

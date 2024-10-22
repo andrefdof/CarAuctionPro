@@ -1,8 +1,8 @@
 # Car Auction Pro
 
-This was developed as part of an interview requirement for a job application.
-
 It represents backend C# code for a car auction system.
+
+[System Requirements](/Requirements.md)
 
 # Assumptions and considerations
 
